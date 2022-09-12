@@ -14,9 +14,9 @@ local Players = game.GetService(game, "Players")
 local IsABoomBox = function(Tool)
     if Tool.ClassName == "Tool" and Tool:FindFirstChild("Handle") and Tool:FindFirstChildOfClass("RemoteEvent") and Tool:FindFirstChild("Handle"):FindFirstChildOfClass("Sound") then
         return true;
-    else
-        return false;
     end
+
+    return false;
 end
 
 local CheckTools = function(Player)
@@ -42,7 +42,7 @@ local CheckTools = function(Player)
             end
         end
 
-        return FoundTools
+        return FoundTools;
     end
 end
 
